@@ -1,0 +1,26 @@
+.background {
+  display: table;
+  width:100%;
+  position: relative;
+  .contenido {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 0 20px 20px 20px;
+    position: relative;
+    font-size:1.3rem;
+    p {
+      color:$blanco;
+      font-weight: 700;
+    }
+  }
+}
+
+
+
+.london {
+  @include imagenFondo('https://i600.photobucket.com/albums/tt83/trigun_gunner/anime%20collages/Every_Last_Gundam_by_ZGMF_X20_Freedom.jpg',  top center );
+}
+
+.estacion {
+  @include imagenFondo('../img/imagen03.jpg', 200px);
+}

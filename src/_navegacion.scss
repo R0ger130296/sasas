@@ -1,0 +1,25 @@
+.navegacion {
+  @include clearfix;
+  padding:10px;
+  background-color: $fondo-navegacion;
+  h2 {
+      margin:0;
+      float:left;
+      display: none;
+  }
+  nav {
+    display: inline;
+    margin-top:10px;
+      a {
+          color:$blanco;
+          font-size: 1.3rem;
+          text-decoration: none;
+          text-align:center;
+          display: block;
+          margin-bottom: 20px;
+          &:hover {
+            color:$amarillo;
+          }
+      }
+  }
+}
