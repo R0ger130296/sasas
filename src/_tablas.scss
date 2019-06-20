@@ -9,24 +9,24 @@ table {
     font-family:$fuente-titulos;
     font-size: 1.8rem;
     padding:5px;
-    color:$amarillo;
+    color:$negro;
     margin-bottom: 20px;
   }
   thead tr th  {
-    background-color: darken($azul, 20);
-    color:$blanco;
+    background-color: lighten($blanco, 10);
+    color:$negro;
     font-size: 1.3rem;
   }
   > thead,
   > tbody {
     > tr {
       color:$blanco;
-      background-color: darken($azul,10);
+      background-color: lighten($azul,10);
       &:nth-child(odd) {
         background-color: $azul;
       }
       &:hover {
-        background-color: darken($amarillo,5);
+        background-color: lighten($azulOscuro,5);
       }
       th,
       td {
