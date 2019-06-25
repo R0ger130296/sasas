@@ -1,9 +1,27 @@
-
- 
 <select [(ngModel)]="TablaSelecionada" (change)="leerDatos()">
-   <option value=999>
-     Seleciones Tabla
-   </option>
-   <option *ngFor="let tabla of tablas; let i= index" value={{i}}> {{tabla}}</option>
- </select>
+  <option value=999>
+    Seleciones Tabla
+  </option>
+  <option *ngFor="let tabla of tablas; let i= index" value={{i}}> {{tabla}}</option>
+</select>
+<div class="row">
+  <table>
+    <thead>
+      <tr>
+        <th><strong>NO</strong></th>
+        <th *ngFor="let campo of campos">
+          <strong>
+            {{campo}}
+          </strong>
+        </th>
+      </tr>
+    </thead>
 
+    <body>
+      <tr *ngFor="let dato of datos; let i= index">
+        <td>{{i+1}}</td>
+        <td *ngFor="let campo of campos">{{dato[campo]}}</td>
+      </tr>
+    </body>
+  </table>
+</div>
